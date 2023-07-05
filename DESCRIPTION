@@ -1,7 +1,7 @@
 Package: vmdlspkg
 Type: Package
 Title: R package for dls project in vxmt
-Version: 2.1.2
+Version: 2.2.0
 Author: hulilei
 Maintainer: hulilei <hulilei@takewiki.com.cn>
 Description: More about what it does (maybe more than one line)

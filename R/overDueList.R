@@ -41,7 +41,7 @@ overDuePrd_query_cn <- function(token='D62212AC-5651-4387-B3AC-42D3E38D6AFD',FCa
   res = overDuePrd_query(token = token,FCategory = FCategory)
   ncount = nrow(res)
   if(ncount >0){
-    names(res) <- c('产品分组','计划交货日期','逾期天数','采购订单号','物料名称','物料编码','负责人','客户','数量','生产日期')
+    names(res) <- c('产品分组','计划交货日期','逾期天数','销售订单号','物料名称','物料编码','负责人','客户','数量','生产日期')
   }
   return(res)
 }
