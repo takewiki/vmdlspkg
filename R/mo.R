@@ -49,7 +49,7 @@ moDetail_query <- function(token='D62212AC-5651-4387-B3AC-42D3E38D6AFD',
       ,[FQualifiedQuantity]  合格数
       ,[FDateOfDocumentIssuance] 下达日期
       ,Fcategory as 产品组
-  FROM [vmdls].[dbo].[rds_vm_vw_std_moDetail]
+  FROM  [rds_vm_vw_std_moDetail]
    where FDateOfDocumentIssuance >='",FStartDate,"' and FDateOfDocumentIssuance <='",FEndDate,"'")
   }else{
     sql <- paste0("SELECT
@@ -62,7 +62,7 @@ moDetail_query <- function(token='D62212AC-5651-4387-B3AC-42D3E38D6AFD',
       ,[FQualifiedQuantity]  合格数
       ,[FDateOfDocumentIssuance] 下达日期
       ,Fcategory as 产品组
-  FROM [vmdls].[dbo].[rds_vm_vw_std_moDetail]
+  FROM  [rds_vm_vw_std_moDetail]
    where FDateOfDocumentIssuance >='",FStartDate,"' and FDateOfDocumentIssuance <='",FEndDate,"'
                   and Fcategory ='",Fcategory,"'")
   }
